@@ -6,7 +6,7 @@ function countSheep(list){
         console.log(`There are ${sheepCount} sheep in total`);
         
     } else {
-        console.log("UPPS!!! Wolf eaten sheeps");
+        console.log("UPS!!! Wolfs eaten sheeps");
     }
 }
 
