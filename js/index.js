@@ -1,18 +1,17 @@
+function countSheep(list){
+    const sheepCount= list.filter(Boolean).length;
 
+    if (sheepCount>0) {
 
-function countSheeps(list) {
-    const sheepCount = list.filter(boolean).leght;
-    if (sheepCount > 0) {
-        return  `there are ${sheepCount} sheep in total`;
-    }    
-
-    else {
-        return `<p>UPS!!! Wolf eaten Sheeps</p>`;
+        console.log(`There are ${sheepCount} sheep in total`);
+        
+    } else {
+        console.log("UPPS!!! Wolf eaten sheeps");
     }
+}
 
- }
+const list1 = [true,  true,  true,  false, true,  true,  true,  true , true,  false, true,  false, true,  false, false, true , true,  true,  true,  true , false, false, true,  true];
+const list2 = [false, false, false];
 
- //console.log(countSheeps)[true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true]
-
- //console.log(countSheeps)([false, false, false])
- 
+countSheep(list1);
+countSheep(list2);
